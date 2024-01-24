@@ -15,27 +15,28 @@
 			align-items: center;
 			justify-content: center;
 			height: 100vh;
-			/* 100% der Bildschirmhöhe */
 			margin: 0;
-			/* Entfernt den Standard-Rand des body-Elements */
 		}
+
+
 
 		#countdown-values {
 			font-size: 4em;
-			/* Größere Schriftgröße */
 			font-weight: bold;
-			color: white;
-			/* Textfarbe anpassen, damit es auf dem Hintergrund lesbar ist */
+			color: black;
 			text-align: center;
-			/* Zentriert den Text */
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+
+			padding: 10px;
 		}
 
-		@media (max-width: 768px) {
 
-			/* Medienabfrage für Bildschirme mit einer Breite von maximal 768 Pixeln (z.B. Handys) */
+		@media (max-width: 768px) {
 			#countdown-values {
 				font-size: 2em;
-				/* Anpassung der Schriftgröße für kleinere Bildschirme */
 			}
 		}
 	</style>
@@ -44,6 +45,7 @@
 <body>
 
 	<div class="container" id="countdown">
+		<!-- Move the countdown-values div to the top -->
 		<div id="countdown-values"></div>
 	</div>
 
