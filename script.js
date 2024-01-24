@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Set the target date and time in UTC (YYYY, MM-1, DD, HH, MM, SS)
-    var targetDate = new Date('2024-01-26T14:00:00Z'); // 'Z' stellt UTC-Zeit dar
+    var targetDate = new Date('2024-01-26T13:00:00Z'); // 'Z' stellt UTC-Zeit dar
 
     function updateCountdown() {
         var currentDate = new Date();
