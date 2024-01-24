@@ -1,1 +1,47 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Countdown Timer</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<style>
+		#countdown-title {
+			font-size: 2em;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+
+		#countdown-values {
+			display: flex;
+			font-size: 1.5em;
+			font-weight: bold;
+		}
+
+		#countdown-values p {
+			margin-right: 20px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="container mt-5">
+		<div id="countdown-title">Get Drunk in:</div>
+		<div id="countdown">
+			<div id="countdown-values"></div>
+		</div>
+	</div>
+
+	<!-- Bootstrap JS and Popper.js -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<!-- Custom JavaScript -->
+	<script src="script.js"></script>
+
+</body>
+
+</html>
