@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 '<p>' + seconds + ' Sekunden</p>';
 
             // Aktualisiere den Countdown-Titel und -Werte
-            document.getElementById('countdown-title').textContent = 'Get Drunk in:';
             document.getElementById('countdown-values').innerHTML = countdownHTML;
         } else {
             document.getElementById('countdown').innerHTML = '<p>Der Countdown ist abgelaufen!</p>';
@@ -33,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Update the countdown every second
     setInterval(updateCountdown, 1000);
+
 });
 
 

@@ -8,31 +8,43 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<style>
-		#countdown-title {
-			font-size: 2em;
-			font-weight: bold;
-			margin-bottom: 10px;
+		body {
+			background: url('assets/hintergrund.jpeg') no-repeat center center fixed;
+			background-size: cover;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			/* 100% der Bildschirmhöhe */
+			margin: 0;
+			/* Entfernt den Standard-Rand des body-Elements */
 		}
 
 		#countdown-values {
-			display: flex;
-			font-size: 1.5em;
+			font-size: 4em;
+			/* Größere Schriftgröße */
 			font-weight: bold;
+			color: white;
+			/* Textfarbe anpassen, damit es auf dem Hintergrund lesbar ist */
+			text-align: center;
+			/* Zentriert den Text */
 		}
 
-		#countdown-values p {
-			margin-right: 20px;
+		@media (max-width: 768px) {
+
+			/* Medienabfrage für Bildschirme mit einer Breite von maximal 768 Pixeln (z.B. Handys) */
+			#countdown-values {
+				font-size: 2em;
+				/* Anpassung der Schriftgröße für kleinere Bildschirme */
+			}
 		}
 	</style>
 </head>
 
 <body>
 
-	<div class="container mt-5">
-		<div id="countdown-title">Get Drunk in:</div>
-		<div id="countdown">
-			<div id="countdown-values"></div>
-		</div>
+	<div class="container" id="countdown">
+		<div id="countdown-values"></div>
 	</div>
 
 	<!-- Bootstrap JS and Popper.js -->
